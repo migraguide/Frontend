@@ -5,6 +5,7 @@ import { HomePage } from '@/app/pages/HomePage';
 import { DocumentsPage } from '@/app/pages/DocumentsPage';
 import { JobsPage } from '@/app/pages/JobsPage';
 import { SafetyPage } from '@/app/pages/SafetyPage';
+import { Toaster } from 'sonner';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
+        <Toaster position="top-right" richColors />
       </LanguageProvider>
     </BrowserRouter>
   );

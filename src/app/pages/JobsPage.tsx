@@ -2,10 +2,13 @@ import { useLanguage } from '@/app/contexts/LanguageContext';
 import { motion } from 'motion/react';
 import { Search, Hammer, Scissors, Coffee, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
+import { JobApplicationDialog } from '@/app/components/JobApplicationDialog';
 
 export const JobsPage = () => {
   const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedJob, setSelectedJob] = useState<string | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const jobs = [
     {
@@ -39,6 +42,16 @@ export const JobsPage = () => {
       iconColor: 'text-purple-600',
     },
   ];
+
+  const handleApply = (jobTitle: string) => {
+    setSelectedJob(jobTitle);
+    setIsDialogOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+    setSelectedJob(null);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12">
@@ -106,6 +119,7 @@ export const JobsPage = () => {
                 className={`w-full ${job.color} text-white py-3 rounded-xl font-bold hover:opacity-90 transition-opacity mt-4`}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
+                onClick={() => handleApply(job.title)}
               >
                 {t('applyButton')}
               </motion.button>
@@ -159,6 +173,13 @@ export const JobsPage = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Job Application Dialog */}
+      <JobApplicationDialog
+        isOpen={isDialogOpen}
+        onClose={handleCloseDialog}
+        jobTitle={selectedJob || ''}
+      />
     </div>
   );
 };

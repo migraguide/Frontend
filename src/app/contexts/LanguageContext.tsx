@@ -67,6 +67,18 @@ export const translations = {
     warningPoint3: 'Никогда не платите за "оформление документов"',
     applyButton: 'Откликнуться',
     
+    // Job Application Dialog
+    applyForJob: 'Откликнуться на вакансию',
+    phoneNumber: 'Номер телефона',
+    message: 'Сообщение',
+    messagePlaceholder: 'Расскажите о себе...',
+    cancel: 'Отмена',
+    send: 'Отправить',
+    sending: 'Отправка...',
+    phoneRequired: 'П��жалуйста, укажите номер телефона',
+    applicationSuccess: 'Отклик успешно отправлен!',
+    applicationError: 'Ошибка при отправке отклика. Попробуйте позже.',
+    
     // Safety Page
     safetyTitle: 'Помощь и безопасность',
     safetySubtitle: 'Экстренные контакты и организации, которые помогут',
@@ -149,6 +161,18 @@ export const translations = {
     warningPoint3: 'Never pay for "document processing"',
     applyButton: 'Apply',
     
+    // Job Application Dialog
+    applyForJob: 'Apply for job',
+    phoneNumber: 'Phone number',
+    message: 'Message',
+    messagePlaceholder: 'Tell about yourself...',
+    cancel: 'Cancel',
+    send: 'Send',
+    sending: 'Sending...',
+    phoneRequired: 'Please enter phone number',
+    applicationSuccess: 'Application sent successfully!',
+    applicationError: 'Error sending application. Try again later.',
+    
     // Safety Page
     safetyTitle: 'Help and Safety',
     safetySubtitle: 'Emergency contacts and organizations that will help',
@@ -183,7 +207,7 @@ export const translations = {
     
     // Home Page
     homeTitle: 'МЫЙЗАМДУУ ИШ ҮЧҮН ЖЕТЕКЧИҢИЗ',
-    homeSubtitle: 'Документтер, иш, коопсуздук - баары бир жерде',
+    homeSubtitle: '��окументтер, иш, коопсуздук - баары бир жерде',
     startButton: 'Баштоо',
     mapTitle: 'Бишкектин интерактивдүү картасы',
     documentsCard: 'Документтер',
@@ -230,6 +254,18 @@ export const translations = {
     warningPoint2: 'ИИМ сайтында компаниянын лицензиясын текшериңиз',
     warningPoint3: '"Документтерди даярдоо" үчүн эч качан акча төлөбөңүз',
     applyButton: 'Арыз берүү',
+    
+    // Job Application Dialog
+    applyForJob: 'Вакансияга арыз берүү',
+    phoneNumber: 'Телеграм номери',
+    message: 'Хабар',
+    messagePlaceholder: 'Өзүңүздү жөнүндө айткаңыз...',
+    cancel: 'Башкаруу',
+    send: 'Жөнгө салуу',
+    sending: 'Жөнгө салууда...',
+    phoneRequired: 'Телеграм номерин киргизүү керек',
+    applicationSuccess: 'Арыз сәләмдүүлүк менен жөнгө салынды!',
+    applicationError: 'Арыз жөнгө салууда ылдамдуу. Кийин кайталап көрүңүз.',
     
     // Safety Page
     safetyTitle: 'Жардам жана коопсуздук',
